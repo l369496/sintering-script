@@ -1,0 +1,73 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "//",
+        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+        //"blockComment": [ "/*", "*/" ]
+    },
+    // symbols used as brackets
+    "brackets": [
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "\"",
+            "\""
+        ],
+        [
+            "'",
+            "'"
+        ]
+    ],
+    // symbols that can be used to surround a selection
+    "surroundingPairs": [
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "\"",
+            "\""
+        ],
+        [
+            "'",
+            "'"
+        ]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "(^\\s*((如果|否则如果|当创建方法|方法))\\b.*$",
+        "decreaseIndentPattern": "^\\s*(结束如果|否则如果|继续循环|方法结束)\\b"
+    }
+}

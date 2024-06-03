@@ -1,0 +1,25 @@
+{
+  "name": "sintering-script",
+  "displayName": "Sintering Script",
+  "description": "Sintering Script",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sintering-script",
+      "aliases": ["Sintering Script", "sintering-script"],
+      "extensions": [".SinteringScript"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sintering-script",
+      "scopeName": "source.SinteringScript",
+      "path": "./syntaxes/sintering-script.tmLanguage.json"
+    }]
+  }
+}
