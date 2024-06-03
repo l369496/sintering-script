@@ -2,19 +2,37 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Sintering Script",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+		{ "include": "#keywords" },
+		{ "include": "#methods" },
+		{ "include": "#strings" }
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.sintering-script",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.sintering-script",
+					"match": "\\b(标签|打印|打开|关闭|设|跳到|延时|调用|当|如果|如果|则|否则如果|否则|结束如果|当|时|下轮|后继续|跳出|继续|继续循环|方法|创建方法|返回|方法结束|调用方法)\\b"
+				},
+				{
+					"name": "support.class.sintering-script",
+					"match": "\\b(布尔|整型|浮点|时间|文本|时刻|计时器|输入|输出|比例阀|仪表|温控开关|温控|油压|曲线|配置|弹窗|步骤)"
+				},
+				{
+					"name": "constant.numeric.sintering-script",
+					"match": "(\\b(\\d+|\\.?\\d+(e[\\+|-]?\\d+)?(日|天|时|分|秒|毫秒|h|min|s|ms)?\\b))"
+				},
+				{
+					"name": "keyword.operator.sintering-script",
+					"match": "\\b(且|或|\\&\\&|\\|\\||加|减|乘|除|余|\\+|\\-|\\*|/|%|为|等|自加|自减|自乘|自除|自余|=|\\+=|-=|\\*=|/=|%=|小于|小于等于|大于|大于等于|等于|不等于|<|<=|>|>=|==|\\!=|和|\\!|\\~|\\.)\\b"
+				},
+				{
+					"name": "constant.language.sintering-script",
+					"match": "\\b(真|假)\\b"
+				}]
+		},
+		"methods":{
+			"patterns": [
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.sintering-script",

@@ -10,16 +10,31 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "sintering-script",
-      "aliases": ["Sintering Script", "sintering-script"],
-      "extensions": [".SinteringScript"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "sintering-script",
-      "scopeName": "source.SinteringScript",
-      "path": "./syntaxes/sintering-script.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "sintering-script",
+        "aliases": [
+          "Sintering Script",
+          "sintering-script"
+        ],
+        "extensions": [
+          ".SinteringScript"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sintering-script",
+        "scopeName": "source.SinteringScript",
+        "path": "./syntaxes/sintering-script.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "sintering-script",
+        "path": "./snippets/sintering-script.json"
+      }
+    ]
   }
 }
