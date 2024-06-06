@@ -67,15 +67,15 @@
         ]
     ],
     "indentationRules": {
-        "increaseIndentPattern": "^\\s*(?:如果|否则如果|当|创建方法|方法).*?:\\s*$",
+        "increaseIndentPattern": "^\\s*(?:(如果|否则如果|当|创建方法|方法) ).*",
         "decreaseIndentPattern": "^\\s*(?:否则如果|结束如果|继续循环|方法结束).*?:\\s*$"
     },
     "onEnterRules": [
         {
-            "beforeText": "^\\s*(?:如果|否则如果|当|创建方法|方法).*",
+            "beforeText": "^\\s*(?:(如果|否则如果|当|创建方法|方法) ).*",
             "action": {
                 "indent": "indent",
             }
-        },
+        }
     ]
 }

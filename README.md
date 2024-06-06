@@ -37,6 +37,10 @@ Users appreciate release notes as you update your extension.
 
 添加文本高亮,代码块
 
+### 0.0.1
+
+添加注释高亮,添加任务高亮
+
 ---
 
 ## Working with Markdown

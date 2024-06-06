@@ -4,7 +4,8 @@
 	"patterns": [
 		{ "include": "#keywords" },
 		{ "include": "#methods" },
-		{ "include": "#strings" }
+		{ "include": "#strings" },
+		{ "include": "#comments" }
 	],
 	"repository": {
 		"keywords": {
@@ -15,7 +16,7 @@
 				},
 				{
 					"name": "support.class.sintering-script",
-					"match": "(?<=\\b)(布尔|整型|浮点|时间|文本|时刻|计时器|输入|输出|比例阀|仪表|温控开关|温控|油压|曲线|配置|弹窗|步骤)(?=\\.)"
+					"match": "(?<=\\b)(布尔|整型|浮点|时间|文本|时刻|计时器|输入|输出|比例阀|仪表|温控开关|温控|油压|曲线|配置|弹窗|步骤|任务)(?=\\.)"
 				},
 				{
 					"name": "constant.numeric.sintering-script",
@@ -34,7 +35,7 @@
 			"patterns": [
 				{
 					"name": "variable.property.sintering-script",
-					"match": "(?<=(\\b(布尔|整型|浮点|时间|文本|时刻|计时器|输入|输出|比例阀|仪表|温控开关|温控|油压|曲线|配置|弹窗|步骤)\\.)+)[^ \\f\\n\\r\\t\\v\\(\\)\\,\\\"]+(?=\\b)"
+					"match": "(?<=(\\b(布尔|整型|浮点|时间|文本|时刻|计时器|输入|输出|比例阀|仪表|温控开关|温控|油压|曲线|配置|弹窗|步骤|任务)\\.)+)[^ \\f\\n\\r\\t\\v\\(\\)\\,\\\"]+(?=\\b)"
 				}
 			]
 		},
@@ -46,6 +47,14 @@
 				{
 					"name": "constant.character.escape.sintering-script",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments":{
+			"patterns": [
+				{ 
+					"name": "comment.block.preprocessor.sintering-script",
+					"match": "((^//)|( //)).*(?=\\b)"
 				}
 			]
 		}
