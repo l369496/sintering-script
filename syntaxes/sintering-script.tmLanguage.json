@@ -54,7 +54,7 @@
 			"patterns": [
 				{ 
 					"name": "comment.block.preprocessor.sintering-script",
-					"match": "((^//)|( //)).*(?=\\b)"
+					"match": "((^//)|( //)).*(?=\\n$)"
 				}
 			]
 		}
